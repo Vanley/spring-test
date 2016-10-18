@@ -1,0 +1,30 @@
+group 'com.vanley'
+version '1.0-SNAPSHOT'
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.13'
+  distributionUrl = "https://services.gradle.org/distributions/gradle-$gradleVersion-all.zip"
+}
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.plugin'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.3.RELEASE'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.8.3'
+    compile group: 'org.springframework.data', name: 'spring-data-jpa', version: '1.10.1.RELEASE'
+    //compile group: 'org.hsqldb', name: 'hsqldb', version: '2.3.4'
+    compile('org.jadira.usertype:usertype.core:4.0.0.GA')
+//    compile('com.h2database:h2:1.4.190')
+    compile group: 'mysql', name: 'mysql-connector-java', version: '6.0.4'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.springframework', name: 'spring-test', version: '4.3.3.RELEASE'
+}

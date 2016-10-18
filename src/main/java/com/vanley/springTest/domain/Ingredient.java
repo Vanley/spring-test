@@ -6,8 +6,8 @@ import javax.persistence.*;
  * Created by vanley on 16/10/2016.
  */
 @Entity
-@Table(name="indigrient")
-public class Indigrient {
+@Table(name="ingredient")
+public class Ingredient {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;

@@ -1,7 +1,7 @@
-package com.vanley.springTest.service;
+package com.vanley.cookbook.service;
 
-import com.vanley.springTest.SpringTestConfig;
-import com.vanley.springTest.domain.User;
+import com.vanley.cookbook.CookbookConfig;
+import com.vanley.cookbook.domain.User;
 import static org.junit.Assert.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,7 +14,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  */
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes=SpringTestConfig.class)
+@ContextConfiguration(classes=CookbookConfig.class)
 public class UserServiceTest {
     @Autowired
     UserService us ;

@@ -1,7 +1,7 @@
-package com.vanley.springTest.controller;
+package com.vanley.cookbook.controller;
 
-import com.vanley.springTest.domain.User;
-import com.vanley.springTest.service.UserService;
+import com.vanley.cookbook.domain.User;
+import com.vanley.cookbook.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

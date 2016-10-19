@@ -1,6 +1,6 @@
-package com.vanley.springTest.data;
+package com.vanley.cookbook.data;
 
-import com.vanley.springTest.domain.Recipe;
+import com.vanley.cookbook.domain.Recipe;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

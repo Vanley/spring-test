@@ -1,4 +1,4 @@
-package com.vanley.springTest;
+package com.vanley.cookbook;
 
 import org.springframework.context.annotation.Configuration;
 

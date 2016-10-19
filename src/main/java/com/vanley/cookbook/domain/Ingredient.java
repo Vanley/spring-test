@@ -1,4 +1,4 @@
-package com.vanley.springTest.domain;
+package com.vanley.cookbook.domain;
 
 import javax.persistence.*;
 

@@ -1,4 +1,4 @@
-package com.vanley.springTest.domain;
+package com.vanley.cookbook.domain;
 
 /**
  * Created by vanley on 15/10/2016.

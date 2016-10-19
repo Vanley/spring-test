@@ -1,4 +1,4 @@
-package com.vanley.springTest;
+package com.vanley.cookbook;
 
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
@@ -12,12 +12,12 @@ import javax.servlet.ServletRegistration;
 /**
  * Created by vanley on 15/10/2016.
  */
-public class SpringTestWebAppInitializer implements WebApplicationInitializer{
+public class CookbookWebAppInitializer implements WebApplicationInitializer{
 
     @Override
     public void onStartup(ServletContext container) throws ServletException {
         AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
-        ctx.register(SpringTestConfig.class);
+        ctx.register(CookbookConfig.class);
 
         // Manage the lifecycle of the root application context
         container.addListener(new ContextLoaderListener(ctx));

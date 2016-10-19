@@ -1,6 +1,6 @@
-package com.vanley.springTest.data;
+package com.vanley.cookbook.data;
 
-import com.vanley.springTest.domain.User;
+import com.vanley.cookbook.domain.User;
 import org.springframework.stereotype.Repository;
 
 /**

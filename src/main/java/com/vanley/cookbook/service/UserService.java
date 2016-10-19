@@ -1,7 +1,7 @@
-package com.vanley.springTest.service;
+package com.vanley.cookbook.service;
 
-import com.vanley.springTest.data.UserRepository;
-import com.vanley.springTest.domain.User;
+import com.vanley.cookbook.data.UserRepository;
+import com.vanley.cookbook.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

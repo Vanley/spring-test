@@ -1,6 +1,7 @@
 package com.vanley.cookbook.domain;
 
 import com.vanley.cookbook.CookbookConfig;
+import com.vanley.cookbook.DataTest;
 import com.vanley.cookbook.data.RecipeRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,9 +12,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 /**
  * Created by vanley on 19/10/2016.
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes=CookbookConfig.class)
-public class RecipeTest {
+public class RecipeTest extends DataTest {
 
     @Autowired
     RecipeRepository repo;

@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 /**
  * Created by vanley on 15/10/2016.
  */
-
 @Repository
 public class UserMemoryRepository implements UserRepository {
 

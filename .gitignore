@@ -1,5 +1,2 @@
 build
-gradlew
-gradlew.bat
-gradle-wrapper.jar
-gradle-wrapper.properties
+.gradletasknamecache

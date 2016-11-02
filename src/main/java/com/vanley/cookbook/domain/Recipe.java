@@ -36,7 +36,7 @@ public class Recipe {
 //
 //    List<Ingredient> ing ''
 
-    @ManyToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @ManyToMany(cascade = CascadeType.ALL)
     private List<Tag> tags;
 
     public List<Tag> getTags() {

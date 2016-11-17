@@ -37,14 +37,15 @@ public class RecipeController {
         return new PageImpl<RecipeDTO>(ret);
     }
 
-    @RequestMapping(method = RequestMethod.POST)
-    public RecipeDTO add (@RequestBody RecipeDTO recipeDTO) {
+    @RequestMapping(method = RequestMethod.PUT)
+    public RecipeDTO add(@RequestBody RecipeDTO recipeDTO) {
         Recipe recipeDB = recipeMapper.map(recipeDTO);
         recipeRepository.save(recipeDB);
         return recipeMapper.map(recipeDB);
     }
 
-    @RequestMapping(method = RequestMethod.PATCH)
+//test patch post, co zmienia czy tylko update pol wystepujacych
+    @RequestMapping(method = RequestMethod.POST)
     public RecipeDTO update(@RequestBody RecipeDTO recipeDTO) {
         Recipe recipeDB = recipeMapper.map(recipeDTO);
         if (!recipeRepository.exists(recipeDB.getId())) {

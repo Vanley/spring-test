@@ -23,7 +23,7 @@ public class RecipeMapper {
         ret.setDescription(r.getDescription());
         ret.setPreparationDescription(r.getPreparationDescription());
         ret.setPreparationTimeInMinutes(r.getPreparationTimeInMinutes());
-
+//status
         return ret;
     }
 

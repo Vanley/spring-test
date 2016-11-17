@@ -1,53 +1,15 @@
-package com.vanley.cookbook.domain;
-
-import org.springframework.data.repository.cdi.Eager;
-
-import javax.persistence.*;
-import java.util.List;
+package com.vanley.cookbook.controller.dto.domain;
 
 /**
- * Created by vanley on 19/10/2016.
+ * Created by vanley on 03/11/2016.
  */
-@Entity
-@Table(name="recipe")
-public class Recipe {
-    @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+public class RecipeDTO {
     private Integer id;
-    @Column
     private String name;
-    @Column
     private String description;
-    @Column
     private String preparationDescription;
-    @Column
     private Integer preparationTimeInMinutes;
-    @Enumerated(EnumType.STRING)
-    @Column()
-    private Status status;
-
-//@ManyToMany //(targetEntity = Tag.class)
-//    @JoinTable(
-//            name="recipe_tag",
-//            joinColumns = @JoinColumn(name = "recipe_id", referencedColumnName = "id"),
-//            inverseJoinColumns = @JoinColumn(name = "tag_id", referencedColumnName = "id")
-//    )
-//    ManyToOne
-//    List<RecipeIngridient> ri ;
-//
-//
-//    List<Ingredient> ing ''
-
-    @ManyToMany(cascade = CascadeType.ALL)
-    private List<Tag> tags;
-
-    public List<Tag> getTags() {
-        return tags;
-    }
-
-    public void setTags(List<Tag> tags) {
-        this.tags = tags;
-    }
+    private StatusDTO status;
 
     public Integer getId() {
         return id;
@@ -89,11 +51,11 @@ public class Recipe {
         this.preparationTimeInMinutes = preparationTimeInMinutes;
     }
 
-    public Status getStatus() {
+    public StatusDTO getStatus() {
         return status;
     }
 
-    public void setStatus(Status status) {
+    public void setStatus(StatusDTO status) {
         this.status = status;
     }
 }

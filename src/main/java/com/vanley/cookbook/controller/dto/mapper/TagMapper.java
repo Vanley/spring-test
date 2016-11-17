@@ -26,7 +26,7 @@ public class TagMapper {
     }
 
     public Tag map(TagDTO t) {
-        if (t == null) { return null;}
+        if (t == null) {return null;}
 
         Tag ret = new Tag();
         ret.setId(t.getId());
